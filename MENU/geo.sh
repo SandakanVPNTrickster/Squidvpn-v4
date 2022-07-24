@@ -22,8 +22,7 @@ cekxray="$(openssl x509 -dates -noout < /etc/v2ray/v2ray.crt)"
 expxray=$(echo "${cekxray}" | grep 'notAfter=' | cut -f2 -d=)
 name=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $2}')
 exp=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $3}')
-echo -e  " "
-════════════════════════════════════════════════════════════════ "
+echo -e  " ════════════════════════════════════════════════════════════════ "
 echo -e  " ${green}GEO LOCATION MENU${NC} "
 echo -e  " ═════════════════════════════════════════════════════════════════ "
 echo -e  " [ 1 ] CHANGE DNS SERVER"
@@ -41,9 +40,7 @@ echo -e "\e[0m"
    ;;
    x)
 clear
-       cat /etc/log-create-user.log
-       read -n 1 -s -r -p "Press any key to back on menu"
-       menu
+menu
    ;;
    *)
    echo -e "ERROR!! Please Enter an Correct Number"
