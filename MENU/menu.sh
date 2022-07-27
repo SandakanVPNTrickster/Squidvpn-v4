@@ -16,7 +16,7 @@ else
     exit 1
 fi
 dns="$(cat /etc/resolvconf/resolv.conf.d/head)"
-if $dns = true then
+if [ "$dns" = "&dns" ]; then
    echo -e "$dns"
    clear
  else
