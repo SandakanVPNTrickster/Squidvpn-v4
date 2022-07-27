@@ -33,9 +33,9 @@ expxray=$(echo "${cekxray}" | grep 'notAfter=' | cut -f2 -d=)
 name=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $2}')
 exp=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $3}')
 echo -e  " "
-echo -e  " ═════════════════════════════════════════════════"
+echo -e  " ${green}═════════════════════════════════════════════════"
 echo -e  " ${green}    PREMIUM SCRIPT VPN BY SANDAKAN VPN TRICKSTER${NC} "
-echo -e  " ═════════════════════════════════════════════════"
+echo -e  " ${green}═════════════════════════════════════════════════"
 
 echo -e  " ${green}IP VPS NUMBER               : $IPVPS${NC}"
 echo -e  " ${green}DOMAIN                      : $DOMAIN${NC}"
