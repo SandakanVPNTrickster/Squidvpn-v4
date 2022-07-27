@@ -22,7 +22,7 @@ if [ "${dns2}" = "${dns}" ]; then
    echo -e "DNS MY ALREADY SET"
    clear
  else
-    echo -e "${red}DNS MY NOT SET"
+    echo -e "${red}DNS MY NOT SET{NC}"
 fi
 }
 echo -e " "
