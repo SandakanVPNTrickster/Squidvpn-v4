@@ -16,12 +16,14 @@ else
     exit 1
 fi
 dns="$(cat /etc/resolvconf/resolv.conf.d/head)"
-if [ "$dns" = "&dns" ]; then
-   echo -e "$dns"
+dns2="$(cat /etc/openvpn/update-resolv-conf)"
+if [ "$dns2" = "&dns" ]; then
+   echo -e "$dns2"
    clear
  else
    echo -e ""
     echo -e "${red}DNS MY NOT SET"
+clear
 fi
 echo -e " "
 IPVPS=$(curl -s icanhazip.com)
