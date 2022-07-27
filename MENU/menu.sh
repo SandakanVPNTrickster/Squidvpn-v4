@@ -25,6 +25,7 @@ if [ "$dns2" = "&dns" ]; then
     echo -e "${red}DNS MY NOT SET"
 clear
 fi
+fi
 echo -e " "
 IPVPS=$(curl -s icanhazip.com)
 DOMAIN=$(cat /etc/v2ray/domain)
