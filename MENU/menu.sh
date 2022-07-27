@@ -18,7 +18,7 @@ fi
 dns="$(cat /etc/resolvconf/resolv.conf.d/head)"
 dns2="$(cat /etc/openvpn/update-resolv-conf)"
 netlix () {
-if [ "$dns2" = "$dns" ]; then
+if [ "${dns2}" = "${dns}" ]; then
    echo -e "DNS MY ALREADY SET"
    clear
  else
