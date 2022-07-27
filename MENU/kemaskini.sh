@@ -53,7 +53,7 @@ wget -O port-vless "https://raw.githubusercontent.com/SandakanVPNTrickster/Squid
 wget -O port-tr "https://raw.githubusercontent.com/SandakanVPNTrickster/Squidvpn-v4/main/V2RAY/port-tr.sh"
 
 wget -O mxraycore "https://raw.githubusercontent.com/SandakanVPNTrickster/Squidvpn-v4/main/MENU/mxraycore.sh"
-wget -O netflix "https://raw.githubusercontent.com/SandakanVPNTrickster/Squidvpn-v4/main/MENU/netflix.sh"
+wget -O net "https://raw.githubusercontent.com/SandakanVPNTrickster/Squidvpn-v4/main/MENU/net.sh"
 wget -O sistem-menu "https://raw.githubusercontent.com/SandakanVPNTrickster/Squidvpn-v4/main/MENU/sistem-menu.sh"
 wget -O geo "https://raw.githubusercontent.com/SandakanVPNTrickster/Squidvpn-v4/main/MENU/geo.sh"
 wget -O mv2raycore "https://raw.githubusercontent.com/SandakanVPNTrickster/Squidvpn-v4/main/MENU/mv2raycore.sh"
@@ -128,7 +128,7 @@ chmod +x port-vless
 chmod +x port-tr
 
 chmod +x mxraycore
-chmod +x netflix
+chmod +x net
 chmod +x sistem-menu
 chmod +x geo
 chmod +x mv2raycore
