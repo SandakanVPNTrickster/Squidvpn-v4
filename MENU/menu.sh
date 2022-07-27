@@ -19,7 +19,7 @@ dns="$(cat /etc/resolvconf/resolv.conf.d/head)"
 dns2="$(cat /etc/openvpn/update-resolv-conf)"
 netlix () {
 if [ "$dns2" = "&dns" ]; then
-   echo -e "$dns2"
+   echo -e "DNS MY ALREADY SET"
    clear
  else
     echo -e "${red}DNS MY NOT SET"
@@ -34,7 +34,7 @@ name=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/a
 exp=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $3}')
 echo -e  " "
 echo -e  " ═════════════════════════════════════════════════"
-echo -e  " ${green}       PREMIUM SCRIPT VPN BY SANDAKAN VPN TRICKSTER${NC} "
+echo -e  " ${green}    PREMIUM SCRIPT VPN BY SANDAKAN VPN TRICKSTER${NC} "
 echo -e  " ═════════════════════════════════════════════════"
 
 echo -e  " ${green}IP VPS NUMBER               : $IPVPS${NC}"
