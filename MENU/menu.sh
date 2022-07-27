@@ -15,6 +15,14 @@ else
     echo -e "${green}ACCESS DENIED...PM TELEGRAM OWNER${NC}"
     exit 1
 fi
+dns="$(cat /etc/resolvconf/resolv.conf.d/head)"
+if $dns = true then
+   echo -e "$dns"
+   clear
+ else
+   echo -e ""
+    echo -e "${red}DNS MY NOT SET"
+fi
 echo -e " "
 IPVPS=$(curl -s icanhazip.com)
 DOMAIN=$(cat /etc/v2ray/domain)
@@ -34,6 +42,7 @@ echo -e  " ${green}KERNEL VERSION              : `uname -r`${NC}"
 echo -e  " ${green}EXP DATE CERT V2RAY/XRAY    : $expxray${NC}"
 echo -e  " ${green}CLIENT NAME                 : $name${NC}"
 echo -e  " ${green}EXP SCRIPT ACCSESS          : $exp${NC}"
+echo -e  " ${green}DNS MY                      : $dns${NC}"
 echo -e  " "
 echo -e  " ═════════════════════════════════════════════════"
 echo -e  " ${green}                       MENU UTAMA${NC} "
