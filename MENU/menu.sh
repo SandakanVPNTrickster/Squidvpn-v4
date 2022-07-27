@@ -21,7 +21,6 @@ netlix () {
 if [ "$dns2" = "&dns" ]; then
    echo -e "$dns2"
    clear
-fi
  else
     echo -e "${red}DNS MY NOT SET"
 fi
