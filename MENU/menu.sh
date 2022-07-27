@@ -15,17 +15,20 @@ else
     echo -e "${green}ACCESS DENIED...PM TELEGRAM OWNER${NC}"
     exit 1
 fi
+
+netlix () {
 dns="$(cat /etc/resolvconf/resolv.conf.d/head)"
 dns2="$(cat /etc/openvpn/update-resolv-conf)"
 if [ "$dns2" = "&dns" ]; then
    echo -e "$dns2"
    clear
+fi
  else
    echo -e ""
     echo -e "${red}DNS MY NOT SET"
 clear
 fi
-fi
+}
 echo -e " "
 IPVPS=$(curl -s icanhazip.com)
 DOMAIN=$(cat /etc/v2ray/domain)
